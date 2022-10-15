@@ -1,0 +1,194 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+#container{
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFEEE6;
+}
+
+/* HEADER */
+#header_container{
+    width: 100%;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 30px; 
+    color: #fff;
+}
+
+.header_li{
+    background-color: #83AF93; 
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+}
+
+.header_li:hover{
+    background-color: #F2711B;
+}
+.lista{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.slogan {
+    color: #B7C093; 
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+.contact{
+    padding: 10px;
+    display: flex;
+    gap: 25px;
+    color: #B7C093;
+}
+
+.contact_center{
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+}
+.contact img {
+    height: 25px; 
+    width: 25px;
+}
+
+/* DESTAQUES DA SEMANA */
+.section_sales {
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    flex-basis: 250px;
+    width: 100%;
+    justify-content: center;
+    background-color: #FFD5BA;
+    padding: 20px 0px 20px 0px;
+    align-items: center;
+    color: #F2711B;
+}
+
+.pdt_1, .pdt_2, .pdt_3 {
+    height: 250px; 
+    width: 350px;
+    border: 1px solid #B7C093; 
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 20px 0 20px;
+}
+
+.div_sale{
+    text-align: center;
+}
+
+.sale_container{
+    display: flex;
+}
+/* FOOTER */
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFD5BA;;
+    width: 100vw;
+    color:#97A275;
+}
+
+.infos{
+    background-color: #B7C093;
+    border: 5px;
+}
+
+
+/* SLIDER */ 
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: #F2711B;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: relative;
+    width: 10px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider li:nth-child(4) label {
+    left: 100px;
+}
+
+.slider li:nth-child(5) label {
+    left: 130px;
+}
+
+.slider li:nth-child(6) label {
+    left: 160px;
+}
+
+.slider {
+    display: block;
+    height: 450px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    border-radius: 20px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
